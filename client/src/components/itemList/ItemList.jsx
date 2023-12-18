@@ -1,6 +1,7 @@
 import { useQuery } from '@apollo/client';
 import Item from './Item'
 import { QUERY_ITEMS } from '../../utils/queries'
+import './Item.scss'
 
 export default function ItemList(){
     const { loading, data } = useQuery(QUERY_ITEMS)

@@ -17,7 +17,7 @@ export default function Item( { item } ) {
         <Card 
             key={id}
             style={{
-                width: 150,
+                width: 200,
                 margin: '1em',
                 textAlign: 'center'
             }}
@@ -33,11 +33,11 @@ export default function Item( { item } ) {
                     0
                 </Button>,
                 <PlusCircleOutlined key="setting"  onClick={()=> handleCart('add', item)}/>,
-                <p key={cost}>${cost/100}</p>
             ]}
             >
             <Meta
                 title={name}
+                description={`$${cost/100}`}
                 />
         </Card>
     )
