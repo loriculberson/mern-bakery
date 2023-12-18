@@ -1,10 +1,15 @@
 const typeDefs = `
     type User {
-    _id: ID
-    name: String!
-    email: String
-    password: String
-    favorites: [Item]
+        _id: ID
+        name: String!
+        email: String
+        password: String
+        favorites: [Item]
+    }
+
+    type Auth {
+        token: ID!
+        user: User
     }
 
     type Item {
@@ -22,7 +27,8 @@ const typeDefs = `
     }
 
     type Mutation {
-        addUser(name: String!, email: String, password: String): User
+        addUser(name: String!, email: String, password: String): Auth
+        login(email: String!, password: String!): Auth
         addFavorite(userId: ID!, itemId: ID): User
         removeFavorite(userId: ID, itemId: ID): User
     }

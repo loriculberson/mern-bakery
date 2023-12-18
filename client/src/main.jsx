@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App.jsx'
 import ItemList from './components/itemList/ItemList.jsx';
+import Favorites from './components/favorites/Favorites.jsx';
 // import Cart from './components/cart/Cart.jsx'
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <ItemList />,
+      },
+      {
+        path: 'favorites',
+        element: <Favorites />,
       },
       // {
       //   path: 'cart',

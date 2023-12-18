@@ -22,6 +22,7 @@ export default function Navbar(){
                         offset={[2,-20]}
                     />
                 </Link>
+                <Link to='/favorites'>My Favorites</Link>
             </nav>
         </div>
     )
