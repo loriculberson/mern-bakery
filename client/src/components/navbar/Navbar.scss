@@ -1,0 +1,14 @@
+.navigation {
+    .navbar {
+        background: rgb(40, 38, 38);
+        display: flex;
+        justify-content: flex-end;
+        min-height: 50px;
+        a {
+            color: white;
+            padding: 0.5em;
+            text-decoration: none;
+            margin-right: 1em;
+        }
+    }
+}
