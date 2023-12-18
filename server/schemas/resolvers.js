@@ -12,11 +12,11 @@ const resolvers = {
       return User.find().populate('favorites');
     },
 
-    user: async (parent, { userId }) => {
-      return User.findOne({ _id: userId }).populate('favorites');
-    },
+    // user: async (parent, { userId }) => {
+    //   return User.findOne({ _id: userId }).populate('favorites');
+    // },
 
-    favs: async (parent, { userId }, context) => {
+    user: async (parent, { userId }, context) => {
       if (context.user) {
         return User.findOne({ _id: userId }).populate('favorites');
       }

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Card, Button } from 'antd'
 import { PlusCircleOutlined, MinusCircleOutlined } from '@ant-design/icons'
 const { Meta } = Card;
